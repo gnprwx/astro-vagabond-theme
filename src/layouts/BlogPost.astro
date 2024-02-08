@@ -4,7 +4,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
-import { ROOT_STYLE, POST_TITLE } from '../style';
+import { ROOT_STYLE, RESPONSIVE } from '../style';
 import { SITE_TITLE } from '../consts';
 
 type Props = CollectionEntry<'blog'>['data'];
@@ -17,20 +17,19 @@ const { title, description, pubDate } = Astro.props;
 	<head>
 		<BaseHead title={`${SITE_TITLE} :: ${title}`} description={description} />
 	</head>
-
 		<body class={ROOT_STYLE}>
 		<Header />
 		<main>
 			<article>
-				<div class={POST_TITLE}>
+				<div class={RESPONSIVE}>
           	<h2>{title}</h2>
-						<div>
+						<p>
 							<FormattedDate date={pubDate} />
-				    </div>
+            </p>
         </div>
-						<hr />
+						<hr>
 					<slot />
-          	<hr />
+          	<hr>
 			</article>
 		</main>
 		<Footer />

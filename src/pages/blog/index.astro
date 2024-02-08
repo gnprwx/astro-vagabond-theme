@@ -5,7 +5,7 @@ import Footer from '../../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
-import { ROOT_STYLE, BLOG_ENTRIES } from '../../style';
+import { ROOT_STYLE, RESPONSIVE } from '../../style';
 
 const posts = (await getCollection('blog')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
@@ -21,21 +21,19 @@ const posts = (await getCollection('blog')).sort(
 		<Header />
 		<main>
 			<section>
-        <ul class="m-0 p-0">
 					{
-						posts.map((post) => (
-									<li class={BLOG_ENTRIES}>
-                    <a href={`blog/${post.slug}/`}>
-                    <h2>{post.data.title}</h2>
+						posts.map(({slug, data:{title, pubDate}}) => (
+									<div class={RESPONSIVE}>
+                    <a href={`blog/${slug}/`}>
+                    <h2>{title}</h2>
                     </a>
                     <p>
-                      <FormattedDate date={post.data.pubDate} />
+                      <FormattedDate date={pubDate} />
                     </p>
-                  </li>
-                <hr class="mb-2">
+                  </div>
+                <hr>
 						))
 					}
-          </ul>
 			</section>
 		</main>
 		<Footer />
