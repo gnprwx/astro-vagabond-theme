@@ -25,7 +25,7 @@ const posts = (await getCollection('blog')).sort(
 					{
 						posts.map(({slug, data:{title, pubDate}}) => (
 									<li class={`${RESPONSIVE} m-0 p-0`}>
-                    <a href={`blog/${slug}/`}>
+                    <a href={`/blog/${slug}/`}>
                     <h2>{title}</h2>
                     </a>
                     <h4>
