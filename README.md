@@ -22,7 +22,7 @@ If you are unfamiliar with [tailwind](https://tailwindcss.com/docs/utility-first
 
 ### Modifications
 
-The newest blog post shows up first in the blog list instead of the default ascending behavior. CSS and hero images have been stripped out completely, but can easily be put back in from the default blog template if you really want them.
+The newest blog post shows up first in the blog list instead of the default ascending behavior. CSS and hero images have been stripped out as well.
 
 ### Contributors
 
