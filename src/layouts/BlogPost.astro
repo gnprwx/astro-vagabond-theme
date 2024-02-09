@@ -23,9 +23,9 @@ const { title, description, pubDate } = Astro.props;
 			<article>
 				<div class={RESPONSIVE}>
           	<h2>{title}</h2>
-						<p>
+						<h4>
 							<FormattedDate date={pubDate} />
-            </p>
+            </h4>
         </div>
 						<hr>
 					<slot />

@@ -21,19 +21,21 @@ const posts = (await getCollection('blog')).sort(
 		<Header />
 		<main>
 			<section>
+        <ul class="m-0 p-0">
 					{
 						posts.map(({slug, data:{title, pubDate}}) => (
-									<div class={RESPONSIVE}>
+									<li class={`${RESPONSIVE} m-0 p-0`}>
                     <a href={`blog/${slug}/`}>
                     <h2>{title}</h2>
                     </a>
-                    <p>
+                    <h4>
                       <FormattedDate date={pubDate} />
-                    </p>
-                  </div>
+                    </h4>
+                  </li>
                 <hr>
 						))
 					}
+          </ul>
 			</section>
 		</main>
 		<Footer />
