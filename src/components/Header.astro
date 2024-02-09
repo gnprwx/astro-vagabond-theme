@@ -1,12 +1,15 @@
 ---
 import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
+import {NAV_LINKS} from '../style';
 ---
 
 <header class="text-center">
 	<nav class="prose-a:decoration-wavy">
-		<h1 class="text-6xl"><a href="/">{SITE_TITLE}</a></h1>
-			<div class="flex justify-center gap-5">
+		<a href="/">
+      <h1 class="text-6xl">{SITE_TITLE}</h1>
+    </a>
+			<div class={NAV_LINKS}>
         <HeaderLink href="/">Home</HeaderLink>
         <HeaderLink href="/blog">Blog</HeaderLink>
         <HeaderLink href="/about">About</HeaderLink>
