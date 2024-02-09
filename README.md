@@ -22,7 +22,7 @@ If you are unfamiliar with [tailwind](https://tailwindcss.com/docs/utility-first
 
 ### Modifications
 
-The newest blog post shows up first in the blog list instead of the default ascending behavior. Hero images do not show in the list of blog posts.
+The newest blog post shows up first in the blog list instead of the default ascending behavior. Hero images do not show in the list of blog posts. Any lengthy tailwind strings or strings used in more than one location can be put in the `style.ts` file in root directory.
 
 ### Contributors
 
