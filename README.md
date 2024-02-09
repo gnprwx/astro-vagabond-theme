@@ -12,7 +12,7 @@ https://astro-vagabond-theme.netlify.app
 
 ### Preview
 
-![theme-preview](./public/theme-preview.webp)
+![theme-preview](./public/vagabond-preview.webp)
 
 ### About
 
