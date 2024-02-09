@@ -1,68 +1,29 @@
-# Astro Starter Kit: Blog
+# Vagabond
 
-```sh
-npm create astro@latest -- --template blog
-```
+## A minimal blog-focused theme for Astro!
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/blog)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/blog)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/blog/devcontainer.json)
+### Live Example
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+https://astro-vagabond-theme.netlify.app
 
-![blog](https://github.com/withastro/astro/assets/2244813/ff10799f-a816-4703-b967-c78997e8323d)
+### Preview
 
-Features:
+![theme-preview](./public/preview.webp)
 
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
+### About
 
-## 🚀 Project Structure
+Vagabond is a lightweight minimal blog-focused theme for Astro that uses tailwind for quick inline styling. If you don't like to inline your tailwind, there is a `style.ts` file in the root directory to add lengthy stylings/styles used in more than one location.
 
-Inside of your Astro project, you'll see the following folders and files:
+In addition to tailwind, Vagabond also uses the typography to allow default html formatting when using html tags.
 
-```text
-├── public/
-├── src/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
-├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
-```
+If you are unfamiliar with [tailwind](https://tailwindcss.com/docs/utility-first) or [typography](https://tailwindcss.com/docs/typography-plugin), the documentation is very good at getting the uninitiated up to speed.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+### Modifications
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Outside of the theme itself, CSS and hero images have been stripped out completely, but can easily be put back in if truly desired.
 
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
+### Contributors
 
-Any static assets, like images, can be placed in the `public/` directory.
+[greg pappas](https://github.com/gnprwx)
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
-## Credit
-
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+[![Built with Astro](https://astro.badg.es/v2/built-with-astro/large.svg)](https://astro.build)
