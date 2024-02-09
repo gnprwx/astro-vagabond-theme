@@ -9,7 +9,7 @@ import { SITE_TITLE } from '../consts';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 
 ---
 
@@ -21,10 +21,20 @@ const { title, description, pubDate } = Astro.props;
 		<Header />
 		<main>
 			<article>
+        <div class="hero-image">
+					{heroImage && <img width={1020} height={510} src={heroImage} alt="" />}
+				</div>
 				<div class={RESPONSIVE}>
           	<h2>{title}</h2>
 						<h4>
 							<FormattedDate date={pubDate} />
+              {
+								updatedDate && (
+									<div class="last-updated-on">
+										Last updated on <FormattedDate date={updatedDate} />
+									</div>
+								)
+							}
             </h4>
         </div>
 						<hr>
